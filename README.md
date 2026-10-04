@@ -17,9 +17,9 @@ Cada carta tem 20 itens (17 dicas + 3 instruções de tabuleiro, no estilo do jo
 ## Como rodar
 
 ```bash
-cd src/repos/kelvinwieth/perfil7
+cd ~/src/repos/kelvinwieth/perfil7
 npm install
-npm run dev -- --port 43127 --hostname 0.0.0.0
+npm run dev
 ```
 
 Abra [http://127.0.0.1:43127](http://127.0.0.1:43127) no celular (ou no navegador).

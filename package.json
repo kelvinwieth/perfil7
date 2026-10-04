@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev --port 43127 --hostname 0.0.0.0",
     "build": "next build",
-    "start": "next start --port 43127 --hostname 0.0.0.0",
+    "start": "npx --yes serve out -l 43127",
     "lint": "eslint",
-    "assemble-cards": "python3 scripts/assemble-cards.py"
+    "assemble-cards": "python3 scripts/assemble-cards.py",
+    "deploy": "bash scripts/deploy-gh-pages.sh"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

@@ -1,5 +1,7 @@
 # Perfil 7 · Cartas novas
 
+**Na web:** https://kelvinwieth.github.io/perfil7/
+
 Baralho digital com **350 cartas novas** (70 por categoria) para jogar Perfil 7 com o **tabuleiro físico**.
 
 O celular só substitui as cartelas: o mediador anuncia a categoria, abre os números pedidos e lê as dicas em voz alta. Peões, fichas e pontuação ficam no tabuleiro.
@@ -47,3 +49,14 @@ Há também o modo **cartela-bônus** (casa “?”): até 5 números e um palpi
 ```bash
 python3 scripts/assemble-cards.py
 ```
+
+
+## Deploy
+
+Site estático no GitHub Pages: https://kelvinwieth.github.io/perfil7/
+
+```bash
+npm run deploy   # build + push da branch gh-pages
+```
+
+O repositório é público (Pages gratuito). Push em `main` não publica sozinho — rode `npm run deploy` (ou o workflow, se habilitado).

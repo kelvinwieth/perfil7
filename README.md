@@ -17,6 +17,8 @@ Cada carta tem 20 itens (17 dicas + 3 instruções de tabuleiro, no estilo do jo
 ## Como rodar
 
 ```bash
+mkdir -p ~/src/repos/kelvinwieth
+git clone <URL_DO_REPO> ~/src/repos/kelvinwieth/perfil7
 cd ~/src/repos/kelvinwieth/perfil7
 npm install
 npm run dev

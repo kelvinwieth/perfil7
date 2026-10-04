@@ -14,6 +14,7 @@ import {
   saveUsedIds,
 } from "@/lib/cards";
 import type { Category, GameCard, Phase } from "@/lib/types";
+import { APP_VERSION } from "@/lib/version";
 
 const SITE_URL = "https://kelvinwieth.github.io/perfil7/";
 
@@ -157,6 +158,7 @@ function HomeScreen({
             Reiniciar baralho usado
           </button>
         )}
+        <p className="home-version">v{APP_VERSION}</p>
       </div>
     </section>
   );

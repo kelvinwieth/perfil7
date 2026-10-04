@@ -366,6 +366,9 @@
 .card-screen {
   gap: 0.85rem;
   padding-top: 0.75rem;
+  min-height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
 }
 
 .card-screen-toolbar {
@@ -373,6 +376,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 0.5rem 0.75rem;
+  flex-shrink: 0;
 }
 
 .perfil-card {
@@ -449,8 +453,10 @@
   padding: 0.5rem 0.65rem 0.85rem;
   display: grid;
   gap: 0;
+  flex: 1;
+  min-height: 0;
   overflow-y: auto;
-  max-height: min(52dvh, 28rem);
+  -webkit-overflow-scrolling: touch;
 }
 
 .perfil-item {
@@ -496,6 +502,7 @@
 }
 
 .card-screen-actions {
+  flex-shrink: 0;
   padding-top: 0.25rem;
 }
 

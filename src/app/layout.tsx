@@ -12,7 +12,10 @@ const display = Syne({
   subsets: ["latin"],
 });
 
+const siteUrl = new URL("https://kelvinwieth.github.io/perfil7/");
+
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: "Perfil 7 · Cartas novas",
   description:
     "Baralho digital de cartas novas do Perfil 7 para ler no celular, com tabuleiro físico.",
@@ -20,14 +23,18 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     title: "Perfil 7",
-    statusBarStyle: "default",
+    statusBarStyle: "black-translucent",
+  },
+  icons: {
+    icon: [{ url: "icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "apple-icon.svg", type: "image/svg+xml" }],
   },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
+  viewportFit: "cover",
   themeColor: "#1a0d2e",
 };
 

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Perfil 7">
+  <rect width="512" height="512" rx="96" fill="#1a0d2e"/>
+  <polygon
+    points="256,72 408,152 408,360 256,440 104,360 104,152"
+    fill="#f5c518"
+  />
+  <text
+    x="256"
+    y="330"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+    font-size="240"
+    font-weight="900"
+    fill="#1a0d2e"
+  >
+    7
+  </text>
+</svg>

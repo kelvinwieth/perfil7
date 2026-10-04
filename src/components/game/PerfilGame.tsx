@@ -127,8 +127,8 @@ function HomeScreen({
       <div className="home-brand">
         <p className="eyebrow">Cartas novas · um celular</p>
         <h1 className="brand-mark">
-          PERFIL
-          <span className="brand-seven" aria-label="7">
+          <span className="brand-word">PERFIL</span>
+          <span className="brand-seven" aria-hidden="true">
             7
           </span>
         </h1>

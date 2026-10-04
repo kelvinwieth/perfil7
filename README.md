@@ -2,9 +2,7 @@
 
 **Na web:** https://kelvinwieth.github.io/perfil7/
 
-Baralho digital com **350 cartas novas** (70 por categoria) para jogar Perfil 7 com o **tabuleiro físico**.
-
-O celular só substitui as cartelas: o mediador anuncia a categoria, abre os números pedidos e lê as dicas em voz alta. Peões, fichas e pontuação ficam no tabuleiro.
+Baralho digital com **350 cartas novas** (70 por categoria) para complementar o jogo Perfil 7 com tabuleiro físico.
 
 ## Categorias
 
@@ -19,9 +17,8 @@ Cada carta tem 20 itens (17 dicas + 3 instruções de tabuleiro, no estilo do jo
 ## Como rodar
 
 ```bash
-mkdir -p ~/src/repos/kelvinwieth
-git clone <URL_DO_REPO> ~/src/repos/kelvinwieth/perfil7
-cd ~/src/repos/kelvinwieth/perfil7
+git clone https://github.com/kelvinwieth/perfil7.git
+cd perfil7
 npm install
 npm run dev
 ```
@@ -32,13 +29,8 @@ Abra [http://127.0.0.1:43127](http://127.0.0.1:43127) no celular (ou no navegado
 
 1. Escolham o mediador da rodada.
 2. No app: sorteiem a carta (todas as categorias ou uma só).
-3. Passe o celular só para o mediador.
-4. Mediador anuncia a categoria e marca a ficha amarela no tabuleiro.
-5. Jogadores pedem números; o mediador toca e lê.
-6. Acertou? Marquem no app e avancem os peões no tabuleiro como sempre.
-7. Passe o celular para a esquerda — próximo mediador.
-
-Há também o modo **cartela-bônus** (casa “?”): até 5 números e um palpite.
+3. A cartela inteira aparece na tela — leiam as dicas em voz alta conforme os jogadores pedem os números.
+4. Pontuem no tabuleiro como de costume e passem o celular para a esquerda.
 
 ## Dados
 
@@ -50,7 +42,6 @@ Há também o modo **cartela-bônus** (casa “?”): até 5 números e um palpi
 python3 scripts/assemble-cards.py
 ```
 
-
 ## Deploy
 
 Site estático no GitHub Pages: https://kelvinwieth.github.io/perfil7/
@@ -59,4 +50,4 @@ Site estático no GitHub Pages: https://kelvinwieth.github.io/perfil7/
 npm run deploy   # build + push da branch gh-pages
 ```
 
-O repositório é público (Pages gratuito). Push em `main` não publica sozinho — rode `npm run deploy` (ou o workflow, se habilitado).
+Push em `main` não publica sozinho — rode `npm run deploy` (ou o workflow, se habilitado).

@@ -18,11 +18,4 @@ export interface GameCard {
 
 export type GameMode = "normal" | "bonus";
 
-export type Phase =
-  | "home"
-  | "setup"
-  | "pass-mediator"
-  | "mediator"
-  | "playing"
-  | "clue"
-  | "round-end";
+export type Phase = "home" | "setup" | "card" | "round-end";

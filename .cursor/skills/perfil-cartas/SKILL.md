@@ -1,39 +1,43 @@
 ---
 name: perfil-cartas
 description: >-
-  Cria dicas novas de cartelas Perfil 7 (Grow) em PT-BR falado. Use com humanizar.
-  paths: src/data/raw-*.json
+  Escreve dicas de cartela Perfil 7 (Grow) em PT-BR de mesa: terceira pessoa,
+  frases curtas e factuais. Use com humanizar. paths: src/data/raw-*.json
 ---
 
-# Cartelas Perfil 7 — escrita do zero
+# Cartelas Perfil 7
 
-Complemento de domínio para `humanizar` em **modo_criacao**: não parafrasear dicas velhas; inventar 17 pistas novas a partir só da resposta.
-
-## Formato
-
-- 17 dicas por carta, **vago → específico** (1–5 abrem o tema, 6–12 fatos concretos, 13–17 quase entregam).
-- Frases curtas, **tom de mediador lendo na mesa** (Brasil, informal leve, sem poesia de IA).
-- **TRAVA FACTUAL:** só afirmar o que é verdade sobre a resposta; não inventar datas/números/nomes.
+O mediador lê a dica em voz alta. A cartela não fala. Nada de “eu”, “meu”, “sou”, “nasci”, “fico”.
 
 ## Voz
 
-- **PESSOA / COISA / DIGITAL:** 1ª pessoa (`Sou`, `Tenho`, `Uso`, `Entro`).
-- **LUGAR:** 1ª pessoa do lugar (`Fico`, `Moro`, `Recebo turista`).
-- **ANO:** o ano fala; misture eventos daquele ano com propriedades numéricas **sem copiar a mesma frase em toda carta** (varie: par/ímpar, século, soma dos dígitos, romano, bissexto).
+Terceira pessoa, frase curta, uma informação.
 
-## Estilo Grow (referência)
+- Pessoa: “Nasceu em…”, “Foi piloto de…”, “Morreu em…”
+- Lugar: “Fica em…”, “Foi inaugurado em…”, “É uma estátua…”
+- Coisa: “Serve para…”, “Pode ser…”, “É um objeto que…”
+- Ano: “Neste ano…”, “É um ano par.”, “Em algarismos romanos…”
+- Digital: “É um aplicativo…”, “Foi lançado por…”, “Serve para…”
 
-- Cena do cotidiano: ônibus, churrasco, escola, aeroporto.
-- Uma ideia por frase; verbos simples.
-- Última dica pode ser joguinho de palavras **sem** repetir a resposta literal.
+## Curva
+
+1–5: categoria ampla. 6–12: fato concreto. 13–17: quase entrega, sem escrever a resposta.
 
 ## Proibido
 
-- Meta de IA: “drama moderno”, “estado emocional”, “bolha pessoal”, “habito a rotina”.
-- Enciclopédia: “sou considerado”, “marco fundamental”, “associado a”.
-- Template clonado: mesmas 17 frases só trocando o ano em todas as cartas ANO.
-- Travessão (—) como pontuação.
+- Primeira pessoa (sou, tenho, meu, minha, nasci, morri, fico, levo, uso).
+- Metáfora, piada forçada, “sermão”, “bolha”, “drama”, “nesse meu giro”, “me citam”.
+- Travessão (—).
+- Inventar data, número ou nome. Se a dica atual estiver errada, troque por um fato verdadeiro.
 
-## Entrada / saída
+## Exemplo (FONE DE OUVIDO)
 
-- JSON: `{ "answer": "...", "clues": [17 strings] }` — **answer intacto**.
+Ruim: “Levo som colado em quem me usa no dia a dia.”
+Bom: “Reproduz som perto do ouvido.”
+
+Ruim: “Meu nome tem três palavras; a última é onde eu encaixo.”
+Bom: “Pode ser de ouvido, intra-auricular ou over-ear.”
+
+## Saída
+
+`{ "answer": "IGUAL", "clues": [17 strings] }`
